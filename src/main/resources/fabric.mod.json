@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "easy-play",
+	"id": "easy-queue",
 	"version": "${version}",
-	"name": "Easy /Play",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Easy Queue",
+	"description": "Makes it much easier to queue minigames on Hypixel. Run /qhelp for help.",
 	"authors": [
-		"Me!"
+		"downloadableduck"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
