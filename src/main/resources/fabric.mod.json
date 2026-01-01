@@ -20,8 +20,7 @@
 		],
 		"client": [
 			"com.jeff.easyplay.EasyPlayClient",
-            "com.jeff.easyplay.qhelp",
-            "com.jeff.easyplay.malware"
+            "com.jeff.easyplay.qhelp"
 		]
 	},
 	"mixins": [

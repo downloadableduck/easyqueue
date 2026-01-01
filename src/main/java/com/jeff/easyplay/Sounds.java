@@ -12,7 +12,7 @@ public class Sounds {
         Identifier id = Identifier.fromNamespaceAndPath(MOD_ID, name);
         return Registry.register(BuiltInRegistries.SOUND_EVENT, id, SoundEvent.createVariableRangeEvent(id));
     }
-    public static final SoundEvent EXPLOSION = registerSound("explosion");
+
     public static final SoundEvent DING = registerSound("ding");
 
     public static void registerSounds() {
