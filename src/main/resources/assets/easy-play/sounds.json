@@ -1,0 +1,14 @@
+{
+  "explosion": {
+    "subtitle": "sound.easyqueue.explosion",
+    "sounds": [
+      "easy-play:explosion"
+    ]
+  },
+  "ding": {
+    "subtitle": "sound.easyqueue.ding",
+    "sounds": [
+      "easy-play:ding"
+    ]
+  }
+}
