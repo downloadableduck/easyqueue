@@ -2,18 +2,15 @@ package com.jeff.easyplay;
 
 import com.mojang.brigadier.arguments.StringArgumentType;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
+import net.fabricmc.fabric.api.client.command.v2.ClientCommands;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvent;
-
-import java.util.Objects;
 
 public class EasyPlayClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(ClientCommandManager.literal("q")
-                .then(ClientCommandManager.argument("mode", StringArgumentType.string())
+        ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(ClientCommands.literal("q")
+                .then(ClientCommands.argument("mode", StringArgumentType.string())
                         .executes(context -> {
                             var client = context.getSource().getClient();
                             var player = client.player;

@@ -1,7 +1,7 @@
 package com.jeff.easyplay;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
+import net.fabricmc.fabric.api.client.command.v2.ClientCommands;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.minecraft.network.chat.Component;
 
@@ -18,7 +18,7 @@ public class qhelp implements ClientModInitializer {
             §7§oUse underscores for spaces. Example: /q bedwars_doubles""";
     public void onInitializeClient() {
         ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> {
-            dispatcher.register(ClientCommandManager.literal("qhelp")
+            dispatcher.register(ClientCommands.literal("qhelp")
                     .executes(context -> {
                         context.getSource().sendFeedback(Component.literal(qHelpMessage));
                         return 0;
