@@ -789,7 +789,7 @@ public class EasyPlayClient implements ClientModInitializer {
                                     //tnt tag
                                     case "tnttag", "tnt_tag" -> {
 
-                                        player.connection.sendCommand("play tnt_tnttag");
+                                        player.connection.sendCommand("play tnt_tag");
                                         context.getSource().sendFeedback(Component.literal("§3§lQueueing §cT§fN§cT Tag!"));
                                     }
                                     //tnt wizards
